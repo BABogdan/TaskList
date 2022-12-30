@@ -5,11 +5,24 @@ const TaskList = ({taskCard, setTaskCard}) => {
 
     const [sub, setSub] = useState()
 
-    const deleter = (identity) => {
-        let arr = JSON.parse(localStorage.getItem("tasks")) || [];
+    let arr
+    const takeCurrentStorage = () => {
+        arr = JSON.parse(localStorage.getItem("tasks")) || [];
+    }
+
+    const removeIdentifiedItem = (identity) => {
         arr.splice(identity, 1)
+    }
+
+    const pushNewValue = () => {
         localStorage.setItem("tasks", JSON.stringify(arr))
         setSub(!sub)
+    }
+
+    const deleter = (identity) => {
+        takeCurrentStorage(identity)
+        removeIdentifiedItem()
+        pushNewValue()
     }
 
     useEffect(() => {
