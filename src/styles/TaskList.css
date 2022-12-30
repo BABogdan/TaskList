@@ -1,0 +1,26 @@
+.list {
+    margin-top: 10px;
+    display: flex;  
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.card {
+    width: 485px;
+    height: auto;
+    padding: 5px;
+    background-color: #20232a;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.delete {
+    height: 25px;
+    border: none;
+    background-color: red;
+    border-radius: 8px;
+}

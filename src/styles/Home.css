@@ -1,0 +1,13 @@
+* {
+    background-color: #282c34;
+    color: white;
+
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 50px;
+}

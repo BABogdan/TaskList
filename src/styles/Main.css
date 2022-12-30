@@ -1,0 +1,35 @@
+.main {
+    height: 200px;
+    width: 500px;
+    background-color: #20232a;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.input {
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(55, 55, 55);
+    border-radius: 4px;
+}
+
+.enterField {
+    display: flex;
+
+}
+
+.submit {
+    border: none;
+    border-radius: 4px;
+    background-color: #61DBFB;
+    color: #ffffff;
+}
+
+h1 {
+    background-color: #00000000;
+}
